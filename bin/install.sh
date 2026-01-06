@@ -32,6 +32,9 @@ docker compose build
 echo "🚀 Starting containers..."
 docker compose up -d
 
+echo "📦 Installing PHP dependencies..."
+docker compose exec app composer install --no-interaction --prefer-dist
+
 echo "🔑 Generating APP_KEY..."
 docker compose exec app sh -c "cd /var/www && php artisan key:generate --force"
 
