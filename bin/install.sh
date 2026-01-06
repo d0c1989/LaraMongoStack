@@ -32,6 +32,13 @@ docker compose build
 echo "🚀 Starting containers..."
 docker compose up -d
 
+echo "⚙️  Preparing environment file..."
+docker compose exec app sh -c '
+  if [ ! -f .env ]; then
+    cp .env.example .env
+  fi
+'
+
 echo "📦 Installing PHP dependencies..."
 docker compose exec app composer install --no-interaction --prefer-dist
 
