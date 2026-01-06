@@ -36,6 +36,10 @@ This boilerplate is ideal for:
 
 ## 📋 Prerequisites
 
+- **Linux or WSL2** - This boilerplate requires a Linux environment
+  - **Linux**: Works natively on any Linux distribution
+  - **Windows**: Requires WSL2 (Windows Subsystem for Linux 2)
+  - **macOS**: Not supported (Docker networking differences)
 - Docker and Docker Compose installed
 - Git
 - Basic knowledge of Laravel and Docker
