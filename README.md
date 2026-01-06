@@ -142,6 +142,12 @@ MongoDB is pre-configured in `src/config/database.php`. The connection uses the 
 ],
 ```
 
+## Health Check
+
+```bash
+curl http://localhost/api/health
+```
+
 ### Environment Variables
 
 Update `src/.env` to customize your setup:
