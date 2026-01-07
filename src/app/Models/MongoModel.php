@@ -8,6 +8,7 @@ abstract class MongoModel extends Model
 {
     protected $connection = 'mongodb';
 
+    protected $primaryKey = '_id';
     protected $keyType = 'string';
     public $incrementing = false;
 }
